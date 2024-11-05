@@ -18,15 +18,20 @@ const Products = () => {
     };
     
     // CRUD -> D:DELETE -> DELETE
-    const deleteProduct = () => {
-
+    const deleteProduct = product => {
+        console.log('❌:', product);
+        const filteredProductsArray = products.filter(p => p.id !== product.id);
+        setProducts(filteredProductsArray);
     };
 
     return (
         <>
             <h1 className="display-3">Productos</h1>
             <Form />
-            <Table products={productList} />
+            <Table
+                products={products}
+                deleteProduct={deleteProduct}
+            />
         </>
     );
 };
