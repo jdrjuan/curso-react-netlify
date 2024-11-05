@@ -10,6 +10,21 @@ const TableRow = (props) => {
             <td>
                 <img src={product.imageUrl} alt={product.name} width="50" />
             </td>
+            <td>
+
+                <button className="btn btn-sm btn-info">
+                    Ver
+                </button>
+
+                <button className="btn btn-sm btn-warning">
+                    Modificar
+                </button>
+
+                <button className="btn btn-sm btn-danger">
+                    Eliminar
+                </button>
+
+            </td>
         </tr>
     );
 };
