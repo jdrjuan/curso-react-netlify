@@ -49,11 +49,11 @@ const TableRow = props => {
             </td>
             <td>
 
-                <button className="btn btn-sm btn-info">
+                <button className="btn btn-sm btn-info me-2">
                     Ver
                 </button>
 
-                <button className="btn btn-sm btn-warning">
+                <button className="btn btn-sm btn-warning me-2">
                     Modificar
                 </button>
 
